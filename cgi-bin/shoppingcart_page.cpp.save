@@ -1,0 +1,82 @@
+#include <iostream>
+#include <cstring>
+#include "web.h"
+#include "connectionManager.h"
+using namespace std;
+
+
+
+int setUserMail 
+return_user_mail
+
+int main ()
+{
+string usuario = "";
+string correo = "";
+string nombreCompleto = "";
+
+
+try{
+char **qs = web_get_post_string();
+char *user = web_get_from_query_string(qs, "username");
+char *email="" ;
+
+if(!user){
+ throw 404;
+}
+else{
+usuario = string(user);
+
+}
+
+}
+catch(int error){
+
+}
+
+cout << "Content-type:text/html\r\n\r\n";
+cout << "<html>\n";
+
+cout << "<link href='../register_page.css' rel='stylesheet' type='text/css'>\n";
+cout << "<div class=\"login\" style=\"background-color: rgb(248,248,255,0.8);\" >\n";
+cout << "  <h2 class=\"active\"> Carrito de Compras </h2>\n";
+cout << "  <form method=\"post\" style=\"padding-top: 40px\">  \n"; 
+cout << "   	<table class=\"default\">	\n";	
+cout << "	<tr>\n";
+cout << "    <th>Producto</th>\n";
+cout << "   <th>Cantidad</th>\n";
+cout << "   <th>Precio</th>\n";
+cout << "	</tr>	\n";
+cout << "	<tr>\n";
+cout << "   <td>Agua</td>\n";
+cout << "   <td>4</td>\n";
+cout << "   <td>$400</td>\n";
+cout << "	</tr>\n";
+cout << "	<tr>\n";
+cout << "   <td>Lagrimas</td>\n";
+cout << "	<td>5</td>\n";
+cout << "	<td>$500</td>\n";
+cout << "	</tr>\n";
+cout << "	<td>Semillas</td>\n";
+cout << "	<td>7</td>\n";
+cout << "	<td>$700</td>\n";
+cout << "	</tr>\n";
+cout << "	<td>Total</td>\n";
+cout << "	<td></td>\n";
+cout << "	<td>$1600</td>\n";
+cout << "	</tr>\n";
+cout << "</table>\n";
+cout << "	<br><br><br>	\n";
+cout << "    <span>Usuario</span><br><br><br>\n";
+cout << "   <span>Metodo de pago: ************8834</span><br><br><br>\n";
+cout << "  <button class=\"create\">Procesar Compra</button>\n";
+cout << " </form>\n";
+cout << "  <form action=\"main_page.cgi\" method=\"post\" > \n";
+cout << "<input hidden type=\"text\" class=\"text\" name=\"username\" value=\"" << usuario << "\" style=\"display:none;\">\n"; 
+cout << " 	<button class=\"cancel\" >Cancelar</button>\n";
+cout << "  </form>\n";
+cout << "</div>\n";
+
+
+    return 0;
+}

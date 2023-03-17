@@ -1,0 +1,181 @@
+body {
+    background: url('https://img5.goodfon.com/wallpaper/nbig/9/9b/gorod-neboskreby-zdaniia-zdanie-city-sky-arkhitektura-nebosk.jpg') no-repeat fixed center center;
+    background-size: cover;
+}
+
+.create {
+  background-color: #d3d3d3;
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.login {
+	
+
+  position: relative;
+  height: 900px;
+  width: 500px;
+  margin: auto;
+  
+  padding: 50px 80px;
+  background-size: cover;
+  box-shadow: 0px 30px 60px -5px #000;
+  border-color: #000000;
+
+
+}
+
+
+.active {
+  border-bottom: 2px solid #1161ed;
+  font-size: 40px;
+}
+
+
+h2 {
+  padding-left: 12px;
+  font-size: 22px;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+  letter-spacing: 2px;
+  display: inline-block;
+  font-weight: 100;
+}
+
+h2:first-child {
+  padding-left: 0px;
+}
+
+span {
+  text-transform: uppercase;
+  font-size: 12px;
+  display: inline-block;
+  position: relative;
+  top: -65px;
+}
+
+.text {
+  border: none;
+  width: 89%;
+  padding: 10px 20px;
+  display: block;
+  height: 15px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.4);
+  overflow: hidden;
+  margin-top: 15px;
+  border-color: #000000;
+}
+
+
+input[type="text"],
+input[type="password"] {
+  font-family: 'Montserrat', sans-serif;
+  border-color: #000000;
+}
+
+
+
+input {
+  display: inline-block;
+  padding-top: 20px;
+  font-size: 14px;
+  border-color: #000000;
+}
+
+h2,
+span,
+
+
+label {
+  display: inline-block;
+  padding-top: 10px;
+  padding-left: 5px;
+}
+
+.create {
+  background-color: #333;
+  color: #FFF;
+  width: 95%;
+  padding: 10px 20px;
+  display: block;
+  height: 39px;
+  border-radius: 20px;
+  margin-top: 30px;
+  transition: all 0.5s ease-in-out;
+  border: none;
+  text-transform: uppercase;
+}
+
+.create:hover {
+  background: #4082f5;
+  box-shadow: 0px 4px 35px -5px #4082f5;
+  cursor: pointer;
+}
+
+.create:focus {
+  outline: none;
+}
+
+.cancel {
+  background-color: #333;
+  color: #FFF;
+  width: 95%;
+  padding: 10px 20px;
+  display: block;
+  height: 39px;
+  border-radius: 20px;
+  margin-top: 30px;
+  transition: all 0.5s ease-in-out;
+  border: none;
+  text-transform: uppercase;
+
+}
+
+.cancel:hover {
+  background: #FF000C;
+  box-shadow: 0px 4px 35px -5px #FF000C;
+  cursor: pointer;
+}
+
+.cancel:focus {
+  outline: none;
+}
+
+
+a {
+	padding: 10px 20px;
+  text-align: center;
+  color: #000000;
+}
+
+
+.table shoppingcart_products {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table shoppingcart_products td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.table shoppingcart_products th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.table shoppingcart_products tr:nth-child(even){background-color: #f2f2f2;}
+
+.table shoppingcart_products tr:hover {background-color: #ddd;}
+
+.table shoppingcart_products th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #1161ed;
+  color: white;
+}
